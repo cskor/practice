@@ -5,7 +5,7 @@ import states
 import pairs
 
 def game() :
-	game = raw_input("States or Capitals? ")
+	game = input("States or Capitals? ")
 	if game.upper() == "STATES" :
 		word = states.states()
 	elif game.upper() == "CAPITALS" :
@@ -25,7 +25,7 @@ def game() :
 		letters.append(word[i])
 	correct = 0
 	while(length != correct) :
-		guess =raw_input("Guess a letter: ")
+		guess =input("Guess a letter: ")
 		if guess in guesses :
 			print("You already guessed that. Try again.")
 			continue
